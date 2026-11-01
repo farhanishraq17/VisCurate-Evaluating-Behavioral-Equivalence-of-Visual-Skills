@@ -2,13 +2,18 @@
 
 # VisCurate: Evaluating Behavioral Equivalence of Visual Skills
 
-**Md Farhan Ishraq**<sup>1</sup> · **Md Farhan Ishmam**<sup>2</sup> · **Reaz Hassan Joarder**<sup>1</sup> · **Md Hasanul Kabir**<sup>1</sup>
+[**Md Farhan Ishraq**](https://farhanishraq17.github.io/)<sup>1</sup> · [**Md Farhan Ishmam**](https://farhanishmam.github.io/)<sup>2</sup> · [**Reaz Hassan Joarder**](https://cse.iutoic-dhaka.edu/profile/reaz-hassan)<sup>1</sup> · [**Md Hasanul Kabir**](https://cse.iutoic-dhaka.edu/profile/hasanul/education)<sup>1</sup>
 
 <sup>1</sup>Islamic University of Technology &nbsp;&nbsp; <sup>2</sup>University of Utah
 
 **WACV 2027**
 
-[**Project Page**](https://farhanishraq17.github.io/Viscurate-Website/) &nbsp;·&nbsp; [**BibTeX**](#citation)
+[![Project Page](https://img.shields.io/badge/-Project%20Page-0b6e4f?logo=homeassistant&logoColor=white&labelColor=555555)](https://farhanishraq17.github.io/Viscurate-Website/)
+[![arXiv: 2610.30405](https://img.shields.io/badge/arXiv-2610.30405-b31b1b?logo=arxiv&logoColor=b31b1b&labelColor=f5f5f5)](https://arxiv.org/abs/2610.30405)
+[![GitHub: farhanishraq17/VisCurate-](https://img.shields.io/badge/GitHub-farhanishraq17%2FVisCurate---0077b5?logo=github&logoColor=white&labelColor=000000)](https://github.com/farhanishraq17/VisCurate-)
+<br>
+[![Citation: BibTeX](https://img.shields.io/badge/Citation-BibTeX-f2b90f?logo=googlescholar&logoColor=white&labelColor=555555)](#citation)
+[![License: MIT](https://img.shields.io/badge/License-MIT-7a0a7f?labelColor=555555)](#license)
 
 </div>
 
