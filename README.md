@@ -10,7 +10,7 @@
 
 [![Project Page](https://img.shields.io/badge/-Project%20Page-0b6e4f?logo=homeassistant&logoColor=white&labelColor=555555)](https://farhanishraq17.github.io/Viscurate-Website/)
 [![arXiv: 2610.30405](https://img.shields.io/badge/arXiv-2610.30405-b31b1b?logo=arxiv&logoColor=b31b1b&labelColor=f5f5f5)](https://arxiv.org/abs/2610.30405)
-[![GitHub: farhanishraq17/VisCurate-](https://img.shields.io/badge/GitHub-farhanishraq17%2FVisCurate---0077b5?logo=github&logoColor=white&labelColor=000000)](https://github.com/farhanishraq17/VisCurate-)
+[![GitHub: farhanishraq17/VisCurate-Evaluating-Behavioral-Equivalence-of-Visual-Skills](https://img.shields.io/badge/GitHub-farhanishraq17%2FVisCurate--Evaluating--Behavioral--Equivalence--of--Visual--Skills-0077b5?logo=github&logoColor=white&labelColor=000000)](https://github.com/farhanishraq17/VisCurate-Evaluating-Behavioral-Equivalence-of-Visual-Skills)
 <br>
 [![Citation: BibTeX](https://img.shields.io/badge/Citation-BibTeX-f2b90f?logo=googlescholar&logoColor=white&labelColor=555555)](#citation)
 [![License: MIT](https://img.shields.io/badge/License-MIT-7a0a7f?labelColor=555555)](#license)
@@ -451,8 +451,8 @@ VisCurate requires **Python ≥ 3.11**. The core harness (skills, probes, corrup
 machine-learning dependencies; the LPIPS, DINO and CLIP comparators are in the `[ml]` extra.
 
 ```bash
-git clone https://github.com/farhanishraq17/VisCurate-.git
-cd VisCurate-
+git clone https://github.com/farhanishraq17/VisCurate-Evaluating-Behavioral-Equivalence-of-Visual-Skills.git
+cd VisCurate-Evaluating-Behavioral-Equivalence-of-Visual-Skills
 pip install -e .              # core harness
 pip install -e ".[ml]"        # + LPIPS / DINO / CLIP comparators
 pip install -e ".[viz,agent]" # optional: plotting, Anthropic client
@@ -516,7 +516,7 @@ each can be launched from any directory and resolves the repository root itself.
 ## Repository Structure
 
 ```text
-VisCurate-/
+VisCurate-Evaluating-Behavioral-Equivalence-of-Visual-Skills/
 ├── src/viscurate/
 │   ├── skills/          skill model, the 100-skill library, canonicalization, sandboxed executor
 │   ├── probes/          probe generators, COCO loader, manifest, frozen oracle
