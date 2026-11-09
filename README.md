@@ -18,7 +18,11 @@
 </div>
 
 <p align="center">
-  <img src="docs/figures/overview.png" width="100%" alt="Overview of the VisCurate pipeline: (a) pairwise verification executes a candidate skill pair on shared probes over a parameter grid and assigns a behavioral relation by worst-case aggregation; (b) an LLM curator proposes edits that are applied only when the verified relation supports them.">
+  <a href="https://farhanishraq17.github.io/Viscurate-Website/static/videos/viscurate_explainer.mp4"><img src="docs/figures/viscurate_explainer.gif" width="100%" alt="Explainer: two visual skills with the same description are run on the same images, their outputs are compared across a parameter grid, and the pair is assigned a behavioral relation."></a>
+</p>
+
+<p align="center">
+  <img src="docs/figures/overview_anim.svg" width="100%" alt="Overview of the VisCurate pipeline: (a) pairwise verification executes a candidate skill pair on shared probes over a parameter grid and assigns a behavioral relation by worst-case aggregation; (b) an LLM curator proposes edits that are applied only when the verified relation supports them.">
 </p>
 
 <p align="center"><sub><b>Overview of the VisCurate pipeline.</b> (a) A noisy seed skill library is evaluated through an output-grounded equivalence verifier, which executes candidate skills on shared probes and certifies their behavioral relations from the resulting outputs. (b) These verified relations guide the structural edits proposed by the curation agent, which are validated before updating the library. The process repeats until a compact and organized skill library is produced.</sub></p>
@@ -271,7 +275,7 @@ construction. Each method is evaluated at a matched operating point on all 944 d
   source while wrapping different skills.
 
 <p align="center">
-  <img src="docs/figures/relation_quality.png" width="70%" alt="Per-relation precision, recall and F1 of the verifier on G0: subsumption F1 0.750, semantic-preserving precision 0.037, complementary 0, distinct F1 0.750.">
+  <a href="https://farhanishraq17.github.io/Viscurate-Website/static/videos/relation_quality.mp4"><img src="docs/figures/relation_quality.gif" width="80%" alt="Per-relation precision, recall and F1 of the verifier on G0: subsumption F1 0.750, semantic-preserving precision 0.037, complementary 0, distinct F1 0.750."></a>
 </p>
 <p align="center"><sub>Per-relation precision, recall, and F1 of the output-grounded verifier on <i>G</i><sub>0</sub> (one-vs-rest). EXACT and PERCEPTUAL have no support in a clean reference graph and are omitted.</sub></p>
 
@@ -357,7 +361,7 @@ instance-clustered bootstrap 95% CIs (2,000 resamples).
 <sub>μP, μR, μF1: mean per-episode precision, recall and F1. mF1: micro F1. IS: Intrinsic Score, mean F1 discounted for budget spent on rejected, blocked or invalid actions. AC: action cost (non-END actions per episode). CR: compression ratio. Comp.: mean compression. Pred.: mean predicted repair actions. CR, Comp. and Pred. carry no arrow because they are only meaningful alongside precision or F1.</sub>
 
 <p align="center">
-  <img src="docs/figures/f1_by_rho.png" width="60%" alt="Mean F1 by corruption rate for GPT-5.5, Qwen 3.5 27B, Gemma 4 12B and Qwen 3.5 4B.">
+  <a href="https://farhanishraq17.github.io/Viscurate-Website/static/videos/f1_by_rho.mp4"><img src="docs/figures/f1_by_rho.gif" width="80%" alt="Mean F1 by corruption rate for GPT-5.5, Qwen 3.5 27B, Gemma 4 12B and Qwen 3.5 4B."></a>
 </p>
 <p align="center"><sub>Mean F1 by corruption rate ρ for the four strongest curators (<i>n</i> = 30 episodes per cell). Difficulty is not monotone in ρ: GPT-5.5 improves as defects multiply, Qwen 3.5 27B stays flat, and the smaller models collapse.</sub></p>
 
@@ -370,14 +374,19 @@ instance-clustered bootstrap 95% CIs (2,000 resamples).
 - **Spending the budget is not the same as using it.** Llama 3.2 3B and 3.1 8B exhaust all 200
   actions and still predict only 1–4 repairs, and Intrinsic Score is below mean F1 for every model.
 
+<p align="center">
+  <a href="https://farhanishraq17.github.io/Viscurate-Website/static/videos/ended_rate.mp4"><img src="docs/figures/ended_rate.gif" width="80%" alt="Bar chart of the share of runs each model ended with the END action."></a>
+</p>
+<p align="center"><sub>Percentage of runs that the models have ended using the END action.</sub></p>
+
 ### RQ5 · Cost and scalability
 
 Costs are measured from 262,833 telemetry events.
 
 <table>
   <tr>
-    <td width="45%"><img src="docs/figures/screening_tradeoff.png" alt="Merge recall and share of pairs discarded as the screening neighbour count k grows; recall saturates at k = 10 with 95.1% of pairs discarded."></td>
-    <td width="55%"><img src="docs/figures/candidate_growth.png" alt="Candidate-set size and share of all pairs proposed by screening as the library subsample grows; the fit is |C| = 2.38 n^1.13."></td>
+    <td width="50%"><a href="https://farhanishraq17.github.io/Viscurate-Website/static/videos/screening_tradeoff.mp4"><img src="docs/figures/screening_tradeoff.gif" alt="Merge recall and share of pairs discarded as the screening neighbour count k grows; recall saturates at k = 10 with 95.1% of pairs discarded."></a></td>
+    <td width="50%"><a href="https://farhanishraq17.github.io/Viscurate-Website/static/videos/candidate_growth.mp4"><img src="docs/figures/candidate_growth.gif" alt="Candidate-set size and share of all pairs proposed by screening as the library subsample grows; the fit is |C| = 2.38 n^1.13."></a></td>
   </tr>
   <tr>
     <td><sub>Screening trade-off across neighbor count <i>k</i> at radius 0.05 over ten corrupted instances. Merge recall saturates at <i>k</i> = 10 while 95.1% of pairs are still discarded.</sub></td>
@@ -395,6 +404,11 @@ Costs are measured from 262,833 telemetry events.
 | Raw output cache | 214.8 MB per skill; 2.1 TB at 10⁴ skills |
 | Features-only cache | 5.4 GB at 10⁴ skills (395× smaller) |
 | Tokens per correct repair (GPT-5.5) | 9,202 |
+
+<p align="center">
+  <a href="https://farhanishraq17.github.io/Viscurate-Website/static/videos/cache_footprint.mp4"><img src="docs/figures/cache_footprint.gif" width="80%" alt="Cache footprint by library size for raw output caches and features-only caches, on a log scale."></a>
+</p>
+<p align="center"><sub>Cache footprint by library size for (a) raw output sets and (b) backend features only. The measured unit is 214.8 MB per skill for raw outputs over the 177-probe battery (median of 8 builtin skills), against an analytic features-only cache, a 395× saving at 10<sup>4</sup> skills.</sub></p>
 
 ### Extension studies
 
